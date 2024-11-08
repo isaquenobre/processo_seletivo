@@ -12,12 +12,24 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class ProcessoSeletivo {
     public static void main(String[] args) {
-        /*analisarCandidato(1900.0);
+        /*analisarCandidato(1900.0);pppp
         analisarCandidato(2200.0);
         analisarCandidato(2000.0);*/
         //linhas acima fora feitas na aula 48
         
-        selecaoCandidatos();
+        //selecaoCandidatos(); lnha feita na aula 49
+        imprimirSelecionados();
+    }
+    static void imprimirSelecionados(){
+        String [] candidatos = {"Felipe","Marcio","Julia","Paulo","Augusto"};
+        System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
+       for (int indice=0;indice<candidatos.length;indice++){
+           System.out.println("O candidato de nº " + (indice+1)+ " é " + candidatos[indice]);
+       }
+        System.out.println("Forma abreviada de iteração for each");
+        for (String candidato: candidatos){
+            System.out.println("O candidadto selecionado foi " + candidato);
+        }
     }
     static void selecaoCandidatos(){
         String [] candidatos = {"Felipe", "Marcia", "Julia", "Paulo", "Augusto",
